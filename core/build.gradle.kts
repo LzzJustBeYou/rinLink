@@ -4,6 +4,7 @@ plugins {
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
     id("kotlin-parcelize")
+    id("org.jetbrains.kotlin.plugin.compose")
 }
 
 android {
@@ -35,9 +36,7 @@ android {
     buildFeatures {
         compose = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.8"
-    }
+    // 移除了 composeOptions 块，因为 Kotlin 2.0 中不再需要
 }
 
 dependencies {
