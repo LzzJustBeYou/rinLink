@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.rinzelLink.modules.lan"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 24

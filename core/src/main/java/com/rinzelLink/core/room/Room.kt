@@ -2,6 +2,7 @@ package com.rinzelLink.core.room
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
+import kotlinx.parcelize.RawValue
 
 /**
  * 房间/区域抽象类
@@ -17,7 +18,7 @@ data class Room(
     val description: String? = null,   // 描述
     val deviceCount: Int = 0,          // 设备数量
     val isActive: Boolean = true,      // 是否激活
-    val metadata: Map<String, Any> = emptyMap()
+    val metadata: @RawValue Map<String, Any> = emptyMap()
 ) : Parcelable
 
 /**
@@ -55,7 +56,7 @@ data class DeviceGroup(
     val description: String? = null,
     val isActive: Boolean = true,
     val createdTime: Long = System.currentTimeMillis(),
-    val metadata: Map<String, Any> = emptyMap()
+    val metadata: @RawValue Map<String, Any> = emptyMap()
 ) : Parcelable
 
 /**
@@ -78,7 +79,7 @@ enum class GroupType {
 data class GroupCondition(
     val field: String,        // 字段名
     val operator: Operator,   // 操作符
-    val value: Any,          // 值
+    val value: @RawValue Any, // 值
     val logic: Logic? = null // 逻辑连接符（AND/OR）
 ) : Parcelable
 

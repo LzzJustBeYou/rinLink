@@ -152,6 +152,36 @@ class SceneService @Inject constructor() {
                         else -> false
                     }
                 }
+                TriggerType.HUMIDITY -> {
+                    val device = devices.find { it.did == trigger.deviceId }
+                    val humidity = device?.properties?.get("humidity")?.value as? Number
+                    when (trigger.operator) {
+                        ">" -> humidity?.toDouble() ?: 0.0 > (trigger.expectedValue as? Number)?.toDouble() ?: 0.0
+                        "<" -> humidity?.toDouble() ?: 0.0 < (trigger.expectedValue as? Number)?.toDouble() ?: 0.0
+                        "=" -> humidity?.toDouble() ?: 0.0 == (trigger.expectedValue as? Number)?.toDouble() ?: 0.0
+                        else -> false
+                    }
+                }
+                TriggerType.LIGHT_LEVEL -> {
+                    val device = devices.find { it.did == trigger.deviceId }
+                    val lightLevel = device?.properties?.get("light_level")?.value as? Number
+                    when (trigger.operator) {
+                        ">" -> lightLevel?.toDouble() ?: 0.0 > (trigger.expectedValue as? Number)?.toDouble() ?: 0.0
+                        "<" -> lightLevel?.toDouble() ?: 0.0 < (trigger.expectedValue as? Number)?.toDouble() ?: 0.0
+                        "=" -> lightLevel?.toDouble() ?: 0.0 == (trigger.expectedValue as? Number)?.toDouble() ?: 0.0
+                        else -> false
+                    }
+                }
+                TriggerType.SOUND_LEVEL -> {
+                    val device = devices.find { it.did == trigger.deviceId }
+                    val soundLevel = device?.properties?.get("sound_level")?.value as? Number
+                    when (trigger.operator) {
+                        ">" -> soundLevel?.toDouble() ?: 0.0 > (trigger.expectedValue as? Number)?.toDouble() ?: 0.0
+                        "<" -> soundLevel?.toDouble() ?: 0.0 < (trigger.expectedValue as? Number)?.toDouble() ?: 0.0
+                        "=" -> soundLevel?.toDouble() ?: 0.0 == (trigger.expectedValue as? Number)?.toDouble() ?: 0.0
+                        else -> false
+                    }
+                }
             }
         }
     }

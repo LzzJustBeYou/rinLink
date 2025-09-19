@@ -199,5 +199,4 @@ class WebSocketService @Inject constructor() : MiServiceModule {
         listeners.forEach { it.onModuleError(this, error) }
     }
 }
-```
 

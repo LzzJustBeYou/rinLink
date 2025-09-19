@@ -229,7 +229,7 @@ class ModuleManager @Inject constructor() {
             }
             
             override fun onPropertyUpdate(device: Device, property: com.rinzelLink.core.device.Property) {
-                stateCache.updateDeviceProperty(device.did, property.name, property.value)
+                stateCache.updateDeviceProperty(device.did, property.name, property.value ?: "")
                 listeners.forEach { it.onPropertyUpdate(device, property) }
             }
             

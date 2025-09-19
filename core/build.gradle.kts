@@ -9,7 +9,7 @@ plugins {
 
 android {
     namespace = "com.rinzelLink.core"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 24
@@ -36,7 +36,6 @@ android {
     buildFeatures {
         compose = true
     }
-    // 移除了 composeOptions 块，因为 Kotlin 2.0 中不再需要
 }
 
 dependencies {
@@ -44,6 +43,11 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.coroutines.core)
+    
+    // Compose BOM - 添加 Compose 依赖
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.compose.runtime)
+    implementation(libs.androidx.compose.ui)
     
     // Hilt
     implementation(libs.hilt.android)

@@ -191,5 +191,4 @@ class ZigbeeService @Inject constructor() : MiServiceModule {
         listeners.forEach { it.onModuleError(this, error) }
     }
 }
-```
 

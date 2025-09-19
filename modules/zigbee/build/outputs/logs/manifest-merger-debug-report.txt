@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9122178484729162242.xml:2:13-83
-INJECTED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9122178484729162242.xml:2:13-83
+ADDED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1274760595883700973.xml:2:13-83
+INJECTED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1274760595883700973.xml:2:13-83
 	package
-		INJECTED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9122178484729162242.xml
+		INJECTED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1274760595883700973.xml
 	xmlns:android
-		ADDED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9122178484729162242.xml:2:23-81
+		ADDED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1274760595883700973.xml:2:23-81
 uses-sdk
-INJECTED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9122178484729162242.xml reason: use-sdk injection requested
-INJECTED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9122178484729162242.xml
-INJECTED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9122178484729162242.xml
+INJECTED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1274760595883700973.xml reason: use-sdk injection requested
+INJECTED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1274760595883700973.xml
+INJECTED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1274760595883700973.xml
 	android:targetSdkVersion
-		INJECTED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9122178484729162242.xml
+		INJECTED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1274760595883700973.xml
 	android:minSdkVersion
-		INJECTED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9122178484729162242.xml
+		INJECTED from /Users/rinzel/rinzel_code/android/RinLink/modules/zigbee/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest1274760595883700973.xml

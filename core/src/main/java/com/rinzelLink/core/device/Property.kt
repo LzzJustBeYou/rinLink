@@ -2,6 +2,7 @@ package com.rinzelLink.core.device
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
+import kotlinx.parcelize.RawValue
 
 /**
  * 设备属性抽象类
@@ -12,7 +13,7 @@ data class Property(
     val siid: Int,                    // 服务ID
     val piid: Int,                    // 属性ID
     val name: String,                 // 属性名称
-    val value: Any?,                  // 属性值
+    val value: @RawValue Any?,        // 属性值
     val type: PropertyType,          // 属性类型
     val readable: Boolean = true,     // 是否可读
     val writable: Boolean = false,    // 是否可写
@@ -20,7 +21,7 @@ data class Property(
     val unit: String? = null,         // 单位
     val description: String? = null,  // 描述
     val lastUpdate: Long = 0L,       // 最后更新时间
-    val metadata: Map<String, Any> = emptyMap() // 元数据
+    val metadata: @RawValue Map<String, Any> = emptyMap() // 元数据
 ) : Parcelable
 
 /**
@@ -45,7 +46,7 @@ data class ValueRange(
     val min: Number? = null,
     val max: Number? = null,
     val step: Number? = null,
-    val enumValues: List<Any>? = null
+    val enumValues: @RawValue List<Any>? = null
 ) : Parcelable
 
 /**

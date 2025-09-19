@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.rinzelLink.modules.zigbee"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 24
