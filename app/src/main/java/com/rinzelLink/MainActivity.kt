@@ -4,16 +4,10 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.sp
 import androidx.lifecycle.lifecycleScope
 import com.rinzelLink.core.module.ModuleManager
 import com.rinzelLink.core.room.RoomManager
+import com.rinzelLink.ui.navigation.MainNavigation
 import com.rinzelLink.ui.theme.RinLinkTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -36,11 +30,7 @@ class MainActivity : ComponentActivity() {
         
         setContent {
             RinLinkTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    HomeScreen(
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                MainNavigation()
             }
         }
         
@@ -58,13 +48,4 @@ class MainActivity : ComponentActivity() {
         val rooms = roomManager.getAllRooms()
         println("已加载 ${rooms.size} 个房间")
     }
-}
-
-@Composable
-fun HomeScreen(modifier: Modifier = Modifier) {
-    Text(
-        text = "RinLink 智能家居控制终端",
-        fontSize = 24.sp,
-        modifier = modifier
-    )
 }
